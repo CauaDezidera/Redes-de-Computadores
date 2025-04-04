@@ -1,6 +1,9 @@
-  GNU nano 7.2                                       docker-compose.yml                                                   server1:
+version: '3.8'
+
+services:
+  server1:
     build:
-      context: ./projeto  # Caminho para a pasta onde está o Dockerfile
+      context: ./projeto
     container_name: server1
     hostname: server1
     ports:
