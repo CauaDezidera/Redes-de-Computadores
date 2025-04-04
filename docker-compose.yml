@@ -1,0 +1,23 @@
+  GNU nano 7.2                                       docker-compose.yml                                                   server1:
+    build:
+      context: ./projeto  # Caminho para a pasta onde está o Dockerfile
+    container_name: server1
+    hostname: server1
+    ports:
+      - "3001:3000"
+
+  server2:
+    build:
+      context: ./projeto
+    container_name: server2
+    hostname: server2
+    ports:
+      - "3002:3000"
+
+  server3:
+    build:
+      context: ./projeto
+    container_name: server3
+    hostname: server3
+    ports:
+      - "3003:3000"
